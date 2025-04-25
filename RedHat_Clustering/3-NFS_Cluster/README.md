@@ -136,7 +136,9 @@ touch /nfsshare/exports/export2/clientdatafile2
 ### Configure NFS Firewall
 
 ```bash
-firewall-cmd --permanent --add-service=nfs,mountd
+firewall-cmd --permanent --add-service=nfs
+firewall-cmd --permanent --add-service=mountd
+firewall-cmd --permanent --add-service=rpc-bind
 firewall-cmd --reload
 ```
 
