@@ -101,6 +101,7 @@ vgcreate --setautoactivation n my_vg /dev/sda1
 lvcreate -l 100%FREE -n my_lv my_vg
 mkfs.xfs /dev/my_vg/my_lv
 ```
+#### Note: Reboot all nodes after creating LVM.
 
 ### Add Device to All Nodes
 
