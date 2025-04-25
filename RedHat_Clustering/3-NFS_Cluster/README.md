@@ -26,7 +26,7 @@
 
 ```bash
 subscription-manager repos --enable=rhel-9-for-x86_64-highavailability-rpms
-yum update
+yum update -y
 ```
 
 ### 2. Install Required Packages
