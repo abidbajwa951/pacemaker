@@ -110,13 +110,13 @@ lvmdevices --adddev /dev/sda1
 
 ## NFS Configuration
 
-**Required Packages (on both nodes):**  
-Run this on both cluster nodes:
+**Required Packages (on all nodes):**  
+Run this on all cluster nodes:
 ```bash
 dnf install -y nfs-utils
 ```
 
-**Enable and Start Required Services (if not cluster-managed):**
+**Enable and Start Required Services:**
 ```bash
 systemctl enable --now nfs-server
 systemctl enable --now rpcbind
